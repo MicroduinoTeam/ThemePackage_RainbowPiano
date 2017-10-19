@@ -54,7 +54,7 @@ void setup() {
   }
   Serial.println(F("VS1053 found"));
   midiPlayer.applyPatch(MIDIPatch, sizeof(MIDIPatch) / sizeof(uint16_t));
-  midiPlayer.midiSetVolume(0, 127);
+  midiPlayer.midiSetVolume(127, 127);
   midiPlayer.midiSetBank(0, VS1053_BANK_DEFAULT);
   midiPlayer.midiSetInstrument(0, VS1053_GM1_ELECTRIC_GRAND_PIANO);
   delay(200);
