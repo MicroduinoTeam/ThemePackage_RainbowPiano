@@ -28,7 +28,7 @@ ColorLED strip = ColorLED(LED_NUM, PIN_LED);
 AudioPro midiPlayer;
 
 DigitalKey touchButton[7] = {   //touchButton引脚分配
-  DigitalKey(4), DigitalKey(5), DigitalKey(6), DigitalKey(8), DigitalKey(9), DigitalKey(A0), DigitalKey(A1)
+  DigitalKey(4), DigitalKey(5), DigitalKey(6), DigitalKey(8), DigitalKey(9), DigitalKey(A0), DigitalKey(A6)
 };
 
 uint8_t toneNum[7] = {60, 62, 64, 65, 67, 69, 71};   //钢琴音阶
@@ -54,7 +54,7 @@ void setup() {
   }
   Serial.println(F("VS1053 found"));
   midiPlayer.applyPatch(MIDIPatch, sizeof(MIDIPatch) / sizeof(uint16_t));
-  midiPlayer.midiSetVolume(127, 127);
+  midiPlayer.midiSetVolume(0, 127);
   midiPlayer.midiSetBank(0, VS1053_BANK_DEFAULT);
   midiPlayer.midiSetInstrument(0, VS1053_GM1_ELECTRIC_GRAND_PIANO);
   delay(200);
