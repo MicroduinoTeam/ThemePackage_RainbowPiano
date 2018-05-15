@@ -28,7 +28,7 @@ ColorLED strip = ColorLED(LED_NUM, PIN_LED);
 AudioPro midiPlayer;
 
 DigitalKey touchButton[7] = {   //touchButton引脚分配
-  DigitalKey(4), DigitalKey(5), DigitalKey(6), DigitalKey(8), DigitalKey(9), DigitalKey(A0), DigitalKey(A6)
+  DigitalKey(4), DigitalKey(5), DigitalKey(6), DigitalKey(8), DigitalKey(9), DigitalKey(A0), DigitalKey(A1)
 };
 
 uint8_t toneNum[7] = {60, 62, 64, 65, 67, 69, 71};   //钢琴音阶
